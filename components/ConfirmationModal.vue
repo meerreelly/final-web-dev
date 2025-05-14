@@ -12,11 +12,11 @@
           <UIcon name="i-heroicons-exclamation-triangle" class="h-6 w-6 text-blue-600" />
         </div>
         <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
-          <h3 class="text-lg leading-6 font-medium text-gray-900">
+          <h3 class="text-lg leading-6 font-medium ">
             Ви впевнені, що хочете зберегти цей маршрут?
           </h3>
           <div class="mt-2">
-            <p class="text-sm text-gray-500">
+            <p class="text-sm ">
               Після цього ви зможете знайти його у списку своїх маршрутів!
             </p>
           </div>
@@ -25,8 +25,8 @@
 
 
       <div v-else-if="currentState === 'loading'" class="text-center py-4">
-        <UIcon name="i-heroicons-arrow-path" class="animate-spin h-12 w-12 text-blue-500 mx-auto" />
-        <p class="mt-4 text-lg text-gray-700">Завантаження...</p>
+        <UIcon name="i-heroicons-arrow-path" class="animate-spin h-12 w-12  mx-auto" />
+        <p class="mt-4 text-lg ">Завантаження...</p>
       </div>
 
 
@@ -34,7 +34,7 @@
         <div class="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-green-100">
           <UIcon name="i-heroicons-check" class="h-6 w-6 text-green-600" />
         </div>
-        <h3 class="mt-4 text-lg font-medium text-gray-900">Маршрут успішно збережено!</h3>
+        <h3 class="mt-4 text-lg font-medium ">Маршрут успішно збережено!</h3>
       </div>
 
 
@@ -42,8 +42,8 @@
         <div class="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-red-100">
           <UIcon name="i-heroicons-x-mark" class="h-6 w-6 text-red-600" />
         </div>
-        <h3 class="mt-4 text-lg font-medium text-gray-900">Помилка!</h3>
-        <p class="mt-1 text-sm text-gray-500">
+        <h3 class="mt-4 text-lg font-medium ">Помилка!</h3>
+        <p class="mt-1 text-sm ">
           Будь ласка, спробуйте пізніше.
         </p>
         <p v-if="errorMessage" class="mt-2 text-sm text-red-500">{{ errorMessage }}</p>
